@@ -3,9 +3,11 @@ package com.dam.snippets;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 import com.dam.snippets.a1_layout_xml.A11_LinearLayoutXml;
 
@@ -31,6 +33,7 @@ public class A0_AccueilActivity extends AppCompatActivity {
                                                     // Départ                   // Arrivée
                 Intent intent = new Intent(A0_AccueilActivity.this, A11_LinearLayoutXml.class);
                 startActivity(intent);
+
             }
         });
     }
