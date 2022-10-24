@@ -8,6 +8,8 @@ import androidx.core.app.TaskStackBuilder;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import com.dam.snippets.R;
@@ -26,10 +28,12 @@ public class a51_ListView extends AppCompatActivity {
 
     };
 
-    private void AffichageListeView(){
+    private void affichageListView(){
         // lE LIEN ENTRE JAVA ET DESIGN
-        listView lvListView = findViewById(R.id.lvListView);
-        this, android.R.layout.simple_dropdown_item_1line, listeStagiaire);
+        ListView lvListView = findViewById(R.id.lvListView);
+
+        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+        this, android.R.layout.simple_list_item_1, listeStagiaire);
 
         lvListView.setAdapter(adapter);
 
@@ -37,8 +41,7 @@ public class a51_ListView extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 String valItem = (String) lvListView.getItemAtPosition(position);
-                Toast.makeText(getApplicationContext(), text "Le Stagiaire:"
-
+                Toast.makeText(a51_ListView.this, "stagiaire" + valItem, Toast.LENGTH_SHORT).show();
             }
 
         });
