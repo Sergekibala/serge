@@ -30,6 +30,9 @@ public class A0_AccueilActivity extends AppCompatActivity {
         tvLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
+
                                                     // Départ                   // Arrivée
                 Intent intent = new Intent(A0_AccueilActivity.this, A11_LinearLayoutXml.class);
                 startActivity(intent);

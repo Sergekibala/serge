@@ -31,6 +31,7 @@ public class a51_ListView extends AppCompatActivity {
     private void affichageListView(){
         // lE LIEN ENTRE JAVA ET DESIGN
         ListView lvListView = findViewById(R.id.lvListView);
+        // private void affichageLIst
 
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(
         this, android.R.layout.simple_list_item_1, listeStagiaire);
